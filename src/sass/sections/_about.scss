@@ -29,6 +29,18 @@
       align-items: center;
       justify-content: center;
 
+      img {
+        transition: all .2s ease-in-out;
+      } 
+      &:hover img {
+        -webkit-transform:scale(1.50); /* Safari and Chrome */
+        -moz-transform:scale(1.50); /* Firefox */
+        -ms-transform:scale(1.50); /* IE 9 */
+        -o-transform:scale(1.50); /* Opera */
+        transform:scale(1.50);
+
+    }
+
       @include respond(tab-land) {
         height: 100%;
       }
